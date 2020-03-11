@@ -1,8 +1,22 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { Helmet } from "react-helmet"
 
 const Header = ({ siteTitle }) => (
+/*{ <Helmet 
+    title={DataCue.site.siteMetadata.title}
+    meta={[
+      {
+        name: 'description',
+        content: 'Fredweb development',
+      },
+      {
+        name: 'keywords',
+        content: 'web development, gatsby, react, app, website design, web design, fred lunjevich'
+      }
+    ]}
+  /> }*/
   <header
     style={{
       background: `rebeccapurple`,
