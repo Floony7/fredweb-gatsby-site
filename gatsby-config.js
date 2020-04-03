@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Fredweb Design`,
     description: `The home of Kiwi web developer Fred Lunjevich.`,
-    author: `@gatsbyjs`,
+    author: `Fred Lunjevich`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -16,6 +16,15 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      },
+    },
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
