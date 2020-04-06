@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-
+import BlogStyles from "./blog.module.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -16,6 +16,9 @@ const BlogPage = () => {
           }
           html
           excerpt
+          fields {
+            slug
+          }
         }
       }
     }
@@ -27,14 +30,17 @@ const BlogPage = () => {
   <Layout>
     <SEO title="Blog" />
     <h1>Hi from the Blog</h1>
-    <p>Welcome to the blog. Here are jsut some of the amazing stories I have written.</p>
-    <ol>
+    <p>Welcome to the blog. Here are just some of the amazing stories I have written.</p>
+    <ol className={BlogStyles.posts}>
       {data.allMarkdownRemark.edges.map(edge => {
         return (
-          <li>
-            <h2>{edge.node.frontmatter.title}</h2>
-        <p>Posted on: {edge.node.frontmatter.date}</p>
-        <p>{edge.node.excerpt}</p>
+          <li className={BlogStyles.post}>
+            <Link to={`/blog/${edge.node.fields.slug}`}><a>
+              <h2>{edge.node.frontmatter.title}</h2>
+              <small>Posted on: {edge.node.frontmatter.date}</small>
+              <p>{edge.node.excerpt}</p>
+              </a>
+            </Link>
           </li>
         )
       })

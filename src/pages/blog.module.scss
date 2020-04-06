@@ -1,0 +1,30 @@
+.posts {
+    list-style-type: none;
+    margin: 0;
+}
+
+.post {
+    margin: 1rem 0;
+
+    a {
+        display: block;
+        padding: 1rem;
+        background-color: paleturquoise;
+        color: orangered;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: darkcyan;
+    }
+
+    small {
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.8);
+        margin-top: 0;
+    }
+
+    h2 {
+        margin-bottom: 0;
+    }
+}

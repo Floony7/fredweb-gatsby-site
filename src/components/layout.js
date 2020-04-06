@@ -12,7 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.module.scss"
 import "../styles/index.scss"
-import "typeface-alegreya-sans"
+import "typeface-open-sans"
 import sectionStyles from "./section.module.scss"
 
 const Layout = ({ children }) => {

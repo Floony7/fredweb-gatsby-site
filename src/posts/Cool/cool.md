@@ -11,3 +11,5 @@ In this post, I will cover the following:
 * Ways you can practice with technology as a guide
 
 You will learn a lot so please read on.
+
+![Cool](./pistol.jpg)

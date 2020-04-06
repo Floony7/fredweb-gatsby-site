@@ -1,10 +1,27 @@
 import React from 'react'
-import '../components/layout'
+import Layout from '../components/layout'
+import BlogStyles from './blog.module.scss'
+import { Link, graphql } from "gatsby"
 
-const Blog = () => {
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      frontmatter {
+        title
+        date
+      }
+      html
+    }
+  }
+`
+
+const Blog = (props) => {
     return (
         <Layout>
-            <p>This is the Blog template</p>
+            <h3>{props.data.markdownRemark.frontmatter.title}</h3>
+            <small className={BlogStyles.byline}>Posted on: {props.data.markdownRemark.frontmatter.date}</small>
+            <section dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}>
+            </section>
         </Layout>
     )
 }
