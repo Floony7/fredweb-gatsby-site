@@ -28,17 +28,25 @@ const Layout = ({ children }) => {
   `)
 
   return (      
+    <>
+    <div className={sectionStyles.outer}>
       <div className={sectionStyles.container}>
         <div className={sectionStyles.content}>
           <Header siteTitle={data.site.siteMetadata.title} />
-          <main>{children}</main>
         </div>
+      </div>
+    </div>
+    <div className={sectionStyles.container}>
+    <div className={sectionStyles.content}>
+          <main>{children}</main>
+    </div>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a> by {data.site.siteMetadata.author}
         </footer>
       </div>
+    </>
   )
 }
 

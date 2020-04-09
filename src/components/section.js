@@ -4,7 +4,7 @@ import React from "react"
 
 import React from 'react'
 
-const section = ({ children }) => {
+const Section = ({ children }) => {
     return (
         <div className="page-section">
             {children}
@@ -12,4 +12,4 @@ const section = ({ children }) => {
     )
 }
 
-export default section
+export default Section
