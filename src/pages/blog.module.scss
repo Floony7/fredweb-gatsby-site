@@ -10,12 +10,16 @@
         display: block;
         padding: 1rem;
         background-color: paleturquoise;
-        color: orangered;
+        color: rebeccapurple;
         text-decoration: none;
     }
 
     a:hover {
         color: darkcyan;
+    }
+
+    a:visited {
+        color: inherit;
     }
 
     small {

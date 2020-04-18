@@ -26,7 +26,11 @@
     "react-helmet": "^5.2.1",
     "typeface-alegreya": "0.0.69",
     "typeface-alegreya-sans": "0.0.72",
-    "typeface-open-sans": "0.0.75"
+    "typeface-bitter": "0.0.71",
+    "typeface-fira-sans": "0.0.75",
+    "typeface-libre-baskerville": "0.0.72",
+    "typeface-open-sans": "0.0.75",
+    "typeface-source-sans-pro": "^1.1.5"
   },
   "devDependencies": {
     "prettier": "^1.19.1"

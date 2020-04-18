@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import Footer from "./footer"
 import Header from "./header"
 import "./layout.module.scss"
 import "../styles/index.scss"
@@ -37,15 +37,13 @@ const Layout = ({ children }) => {
       </div>
     </div>
     <div className={sectionStyles.container}>
-    <div className={sectionStyles.content}>
+        <div className={sectionStyles.content}>
           <main>{children}</main>
     </div>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a> by {data.site.siteMetadata.author}
-        </footer>
-      </div>
+    </div>
+        <Footer author={data.site.siteMetadata.author} 
+        data={data.site.siteMetadata}
+        />
     </>
   )
 }

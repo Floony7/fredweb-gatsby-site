@@ -29,24 +29,28 @@ const BlogPage = () => {
   return (
   <Layout>
     <SEO title="Blog" />
-    <h1>Hi from the Blog</h1>
-    <p>Welcome to the blog. Here are just some of the amazing stories I have written.</p>
-    <ol className={BlogStyles.posts}>
-      {data.allMarkdownRemark.edges.map(edge => {
-        return (
-          <li className={BlogStyles.post}>
-            <Link to={`/blog/${edge.node.fields.slug}`}><a>
-              <h2>{edge.node.frontmatter.title}</h2>
-              <small>Posted on: {edge.node.frontmatter.date}</small>
-              <p>{edge.node.excerpt}</p>
-              </a>
-            </Link>
-          </li>
-        )
-      })
-    }
-    </ol>
-    <Link to="/">Go back to the homepage</Link>
+    <section className="outer outer--hero mb-2">
+      <div className="container">
+          <h1>Hi from the Blog</h1>
+          <p>Welcome to the blog. Here are just some of the amazing stories I have written.</p>
+          <ol className={BlogStyles.posts}>
+            {data.allMarkdownRemark.edges.map(edge => {
+              return (
+                <li className={BlogStyles.post}>
+                  <Link to={`/blog/${edge.node.fields.slug}`}><a>
+                    <h2>{edge.node.frontmatter.title}</h2>
+                    <small>Posted on: {edge.node.frontmatter.date}</small>
+                    <p>{edge.node.excerpt}</p>
+                    </a>
+                  </Link>
+                </li>
+              )
+            })
+          }
+          </ol>
+          <Link to="/">Go back to the homepage</Link>
+      </div>
+    </section>
   </Layout>
     )
 }

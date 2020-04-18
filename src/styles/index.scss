@@ -1,5 +1,54 @@
-$mainColor: #000;
+* {
+    box-sizing: border-box;
+}
 
-h1, h2, h3, h4, p {
-    color: $mainColor;
+body {
+    background-image: url('../images/kindajean.png');
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Fira Sans', serif;
+}
+
+p {
+    // font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+}
+
+.lead {
+    font-family: 'Fira sans', serif;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 960px;
+    padding: 1rem 1rem 3rem 1rem;
+    margin: -40px auto -60px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content {
+    flex-grow: 1;
+}
+
+.outer {
+    width: 100vw;
+    max-width: 100%;
+    position: relative;
+
+    &--hero {
+        min-height: 40vh;
+        background-color: #fff;
+    }
+
+    /* &--skills {
+        background-color: plum;
+    } */
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
 }
