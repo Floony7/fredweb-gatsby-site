@@ -22,8 +22,9 @@ const IndexPage = () => (
         <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et condimentum est, vel sagittis neque.</p>
         <p>Vivamus dignissim venenatis interdum. Curabitur a vehicula sapien, in egestas odio. Vivamus dapibus viverra dolor ut rhoncus. Fusce id ultricies urna. Donec sagittis sapien vel purus malesuada, sed placerat lorem fermentum. Aenean aliquam efficitur leo, eget blandit ex auctor a. Maecenas odio lacus, tristique nec libero ut, porttitor tincidunt enim.</p>
         <p>Suspendisse blandit urna in faucibus aliquet. Aliquam fermentum mollis efficitur. Duis iaculis ullamcorper justo vel vulputate. Nullam pellentesque, dolor imperdiet congue tempus, libero metus vulputate sem, mattis feugiat lacus leo nec massa. Integer nec nibh quis nulla suscipit blandit.</p>
-        <h2>Class aptent taciti sociosqu ad litora</h2>
-        <p>Torquent per conubia nostra, per inceptos himenaeos. Etiam tincidunt interdum sodales. Mauris consectetur ac lorem vitae suscipit. Suspendisse id dignissim odio. Vivamus maximus, mi non ultricies vehicula, mi arcu vehicula felis, a feugiat ipsum velit non erat. Maecenas eu maximus purus. Curabitur eleifend vehicula leo, sagittis iaculis eros. Donec ultrices pulvinar elit a maximus. Sed rutrum dapibus neque eu tincidunt.</p>
+        <h2>Beyond Wordpress</h2>
+        <p>For most of my web development career I have leaned heavily on <strong>Wordpress</strong>as a platform to build client sites. This worked well for me and my clients &mdash; they got a fully dynamic website and I got to write only the template code I needed to. Plugins served up rest of the functionality.</p>
+        <p>Today, however, technology and approaches to site development have changed. The tools of a web developer have come a long way. We now have Nodejs as a runtime server to work with along with a sophisticated pakage manager that provides developers with access to virtually everything we need to build modern applications and sites.</p>
         </div>
       </section>
       <Section classes="outer outer--skills">
