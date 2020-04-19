@@ -5,7 +5,7 @@ import FooterStyles from "./footer.module.scss"
 const Footer = ({ data }) => {
     return (
         <footer className={FooterStyles.colophon}>
-            <div className="container">
+            <div className={FooterStyles.container}>
                 <p>{data.title}</p>
                 <small className={FooterStyles.credits}>© {new Date().getFullYear()}, Built with
                 {` `}

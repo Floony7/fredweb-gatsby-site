@@ -17,18 +17,36 @@ p {
 }
 
 .lead {
-    font-family: 'Fira sans', serif;
-    font-weight: 700;
+    // font-family: 'Fira sans', serif;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 500;
 }
+
+/* main {
+    box-shadow: rgba(0, 0, 0, 0.3) -3px -3px 3px;
+} */
 
 .container {
     max-width: 960px;
     padding: 1rem 1rem 3rem 1rem;
     margin: -40px auto -60px auto;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: calc(100% / 3); */
+    
+    &--flex-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 3fr));
+    }
 }
 
+.flex-col {
+    // flex: 1;
+    padding: 0 5px;
+    margin: 0 5px;
+    text-align: justify;
+}
 
 .content {
     flex-grow: 1;
