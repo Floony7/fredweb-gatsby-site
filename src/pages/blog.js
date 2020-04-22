@@ -30,7 +30,8 @@ const BlogPage = () => {
   <Layout>
     <SEO title="Blog" />
     <section className="outer outer--hero mb-2">
-      <div className="container">
+      <div className="container container--flex-container-2">
+          <div className="content">
           <h1>Hi from the Blog</h1>
           <p>Welcome to the blog. Here are just some of the amazing stories I have written.</p>
           <ol className={BlogStyles.posts}>
@@ -38,7 +39,7 @@ const BlogPage = () => {
               return (
                 <li className={BlogStyles.post}>
                   <Link to={`/blog/${edge.node.fields.slug}`}><a>
-                    <h2>{edge.node.frontmatter.title}</h2>
+                    <h3 className={BlogStyles.postTitle}>{edge.node.frontmatter.title}</h3>
                     <small>Posted on: {edge.node.frontmatter.date}</small>
                     <p>{edge.node.excerpt}</p>
                     </a>
@@ -49,6 +50,11 @@ const BlogPage = () => {
           }
           </ol>
           <Link to="/">Go back to the homepage</Link>
+          </div> {/* End content div */}
+          <div className="sidebar">
+            <h2>Featured posts</h2>
+            <p>This is an awesome sidebar. don't you like it?</p>
+          </div>
       </div>
     </section>
   </Layout>

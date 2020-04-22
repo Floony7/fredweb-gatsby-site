@@ -5,17 +5,31 @@
 
 .post {
     margin: 1rem 0;
+    box-shadow: rgba(60, 22, 99, 0.4) -3px 3px 3px;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+        box-shadow: rgba(60, 22, 99, 0.4) -6px 6px 6px;
+    }
 
     a {
         display: block;
-        padding: 1rem;
-        background-color: paleturquoise;
-        color: rebeccapurple;
+        padding: 0.5rem;
+        background-color: rgb(220, 220, 220);
+        color: rgb(60, 22, 99);
         text-decoration: none;
     }
 
+    .post-title {
+        margin-bottom: 0;
+    }
+
+    .post-title::after {
+        content:'';
+    }
+
     a:hover {
-        color: darkcyan;
+        color: rgb(4, 117, 117);
     }
 
     a:visited {

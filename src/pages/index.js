@@ -18,10 +18,8 @@ const IndexPage = () => (
       {/* <section className={IndexStyles.sectionHero}> */}
       <section className="outer outer--hero">
         <div className="container container--flex-container">
-        <div className="flex-col">
-          <h1>Web Development in 2020</h1>
-        </div>
           <div className="flex-col">
+          <h1>Web Development in 2020</h1>
             <p className="lead">"But that's not how we did it back in my day."</p><p className="lead">Web development in 2020 looks radically different than it did just a few years ago, and that's a good thing.</p>
             <p>In 2000 when I first learned HTML, things were fairly messy. At that time, page elements, presentation and interaction were thrown into the same HTML document. If you needed to make a tweak here and there you had to surgically find what you wanted to change by sifting through a complex page.</p>
             <p>As the decade progressed things improved quite a lot. Presentation could be abstracted into CSS files while JavaScript files took care of the interaction layer.</p>
@@ -29,7 +27,8 @@ const IndexPage = () => (
           </div>
           <div className="flex-col">
             <h2>Beyond Wordpress</h2>
-            <p>For most of my web development career I have leaned heavily on <strong>Wordpress</strong> as a platform to build client sites. This worked well for me and my clients &mdash; they got a fully dynamic website and I got to write only the template code I needed to. Plugins served up rest of the functionality.</p>
+            <p>For most of my web development career I have leaned heavily on <strong>WordPress</strong> as a platform to build client sites. This worked well for me and my clients &mdash; they got a fully dynamic website and I got to write only the template code I needed to. Plugins served up rest of the functionality.</p>
+            <h2>Serverless and static</h2>
             <p>Today, however, technology and approaches to site development have changed. The tools of a web developer have come a long way. We now have Nodejs as a runtime server to work with along with a sophisticated pakage manager that provides developers with access to virtually everything we need to build modern applications and sites.</p>
             </div>
           </div>
