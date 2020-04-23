@@ -31,15 +31,11 @@ const Layout = ({ children }) => {
     <>
     <div className={sectionStyles.outer}>
       <div className={sectionStyles.container}>
-        <div className={sectionStyles.content}>
           <Header siteTitle={data.site.siteMetadata.title} />
-        </div>
       </div>
     </div>
     <div className={sectionStyles.container}>
-        <div className={sectionStyles.content}>
           <main>{children}</main>
-    </div>
     </div>
         <Footer author={data.site.siteMetadata.author} 
         data={data.site.siteMetadata}

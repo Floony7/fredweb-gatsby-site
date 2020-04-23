@@ -6,11 +6,6 @@
     flex-direction: column;
 }
 
-.content {
-    flex-grow: 1;
-    
-}
-
 .outer::after {
     content: "";
     display: block;
