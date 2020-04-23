@@ -1,0 +1,35 @@
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Fira Sans', serif;
+    position: relative;
+    padding-bottom: 0.9rem;
+}
+
+h2::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: url('../images/underline-aqua.png')
+}
+
+p {
+    // font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+}
+
+.lead {
+    // font-family: 'Fira sans', serif;
+    border-left: 6px solid rgb(10, 176, 132);
+    padding-left: 3px;
+
+    p {
+        font-family: 'Libre Baskerville', serif;
+        font-weight: 500;
+    }
+}
+
+.text-justify {
+    text-align: justify;
+}

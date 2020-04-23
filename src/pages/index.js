@@ -20,7 +20,8 @@ const IndexPage = () => (
         <div className="container container--flex-container">
           <div className="flex-col">
           <h1>Web Development in 2020</h1>
-            <p className="lead">"But that's not how we did it back in my day."</p><p className="lead">Web development in 2020 looks radically different than it did just a few years ago, and that's a good thing.</p>
+            <div className="lead">
+            <p>"But that's not how we did it back in my day."<br />Web development in 2020 looks radically different than it did just a few years ago, and that's a good thing.</p></div>
             <p>In 2000 when I first learned HTML, things were fairly messy. At that time, page elements, presentation and interaction were thrown into the same HTML document. If you needed to make a tweak here and there you had to surgically find what you wanted to change by sifting through a complex page.</p>
             <p>As the decade progressed things improved quite a lot. Presentation could be abstracted into CSS files while JavaScript files took care of the interaction layer.</p>
             <p>Twenty years on we are fortunate to have web standards that make site development easy and faster than ever before.</p>

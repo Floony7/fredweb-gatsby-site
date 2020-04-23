@@ -1,43 +1,11 @@
+@import "typography";
+
 * {
     box-sizing: border-box;
 }
 
-.text-justify {
-    text-align: justify;
-}
-
 body {
     background-image: url('../images/kindajean.png');
-}
-
-h1, h2, h3, h4 {
-    font-family: 'Fira Sans', serif;
-    position: relative;
-    padding-bottom: 0.9rem;
-}
-
-small {
-    font-size: 0.7rem;
-    line-height: 0.7;
-  }
-
-h2::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    content: url('../images/underline-aqua.png')
-}
-
-p {
-    // font-family: 'Open Sans', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1rem;
-}
-
-.lead {
-    // font-family: 'Fira sans', serif;
-    font-family: 'Libre Baskerville', serif;
-    font-weight: 500;
 }
 
 /* main {
