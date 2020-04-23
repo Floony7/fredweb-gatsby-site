@@ -17,7 +17,7 @@ const IndexPage = () => (
     <div className="wrapper">
       {/* <section className={IndexStyles.sectionHero}> */}
       <section className="outer outer--hero">
-        <div className="container container--flex-container">
+        <div className="container container--grid">
           <div className="flex-col">
           <h1>Web Development in 2020</h1>
             <div className="lead">

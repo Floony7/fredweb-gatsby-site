@@ -1,3 +1,5 @@
+@import "config";
+@import "layout";
 @import "typography";
 
 * {
@@ -6,73 +8,6 @@
 
 body {
     background-image: url('../images/kindajean.png');
-}
-
-/* main {
-    box-shadow: rgba(0, 0, 0, 0.3) -3px -3px 3px;
-} */
-
-.container {
-    max-width: 960px;
-    padding: 1rem 1rem 3rem 1rem;
-    margin: -40px auto -60px auto;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-basis: calc(100% / 3); */
-    
-    &--flex-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(360px, 2fr));
-    }
-
-    &--flex-container-2 {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 1em;
-    }
-}
-
-// Two column + sidebar
-.content {
-    grid-column: 1 / span 3;
-  }
-  
-  .sidebar {
-    grid-column: 4 / span 2;
-  }
-  
-  @media (max-width: 700px) {
-    .content,
-    .sidebar {
-      grid-column: 1 / span 5;
-    }
-  }
-
-  // Two equal columns
-.flex-col {
-    // flex: 1;
-    padding: 0 5px;
-    margin: 0 5px;
-    
-    p {
-        text-align: justify;
-    }
-}
-
-.outer {
-    width: 100vw;
-    max-width: 100%;
-    position: relative;
-
-    &--hero {
-        min-height: 40vh;
-        background-color: #fff;
-    }
-
-    /* &--skills {
-        background-color: plum;
-    } */
 }
 
 .mb-2 {

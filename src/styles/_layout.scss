@@ -1,0 +1,57 @@
+.container {
+    max-width: 960px;
+    padding: 1rem 1rem 3rem 1rem;
+    margin: -40px auto -60px auto;
+    
+    &--grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(360px, 2fr));
+    }
+
+    &--grid-2 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1em;
+    }
+}
+
+// Two column + sidebar
+.content {
+    grid-column: 1 / span 3;
+  }
+  
+  .sidebar {
+    grid-column: 4 / span 2;
+  }
+  
+  @media (max-width: 700px) {
+    .content,
+    .sidebar {
+      grid-column: 1 / span 5;
+    }
+  }
+
+  // Two equal columns
+.flex-col {
+    padding: 0 5px;
+    margin: 0 5px;
+    
+    p {
+        text-align: justify;
+    }
+}
+
+.outer {
+    width: 100vw;
+    max-width: 100%;
+    position: relative;
+
+    &--hero {
+        min-height: 40vh;
+        background-color: #fff;
+    }
+
+    /* &--skills {
+        background-color: plum;
+    } */
+}

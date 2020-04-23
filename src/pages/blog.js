@@ -30,7 +30,7 @@ const BlogPage = () => {
   <Layout>
     <SEO title="Blog" />
     <section className="outer outer--hero mb-2">
-      <div className="container container--flex-container-2">
+      <div className="container container--grid-2">
           <div className="content">
           <h1>Hi from the Blog</h1>
           <p>Welcome to the blog. Here are just some of the amazing stories I have written.</p>
