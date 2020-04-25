@@ -1,1 +1,10 @@
 $teal: rgb(10, 176, 132);
+
+@mixin bp($point) {
+    @if $point == medium {
+        @media (min-width: 601px) { @content; }
+    }
+    @else if $point == small {
+        @media (max-width: 600px)  { @content; }
+      }
+}

@@ -16,15 +16,17 @@
 }
 
 // Two column + sidebar
-.content {
-    grid-column: 1 / span 3;
-  }
+@include bp(medium) {
+    .content {
+        grid-column: 1 / span 3;
+      }
+      
+      .sidebar {
+        grid-column: 4 / span 2;
+      }
+}
   
-  .sidebar {
-    grid-column: 4 / span 2;
-  }
-  
-  @media (max-width: 700px) {
+  @include bp(small) {
     .content,
     .sidebar {
       grid-column: 1 / span 5;
