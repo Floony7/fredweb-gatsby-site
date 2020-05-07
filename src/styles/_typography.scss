@@ -1,35 +1,49 @@
-
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Fira Sans', serif;
-    position: relative;
-    padding-bottom: 0.9rem;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Fira Sans", serif;
+  position: relative;
+  padding-bottom: 0.5rem;
 }
 
 h2::after {
-    position: absolute;
+  /* position: absolute;
     left: 0;
     bottom: 0;
-    content: url('../images/underline-aqua.png')
+    content: url('../images/underline-aqua.png') */
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    90deg,
+    rgba(51, 208, 255, 1) 0%,
+    rgba(234, 238, 68, 1) 100%
+  );
+  width: 40%;
+  height: 5px;
+  transform: skew(45deg);
 }
 
 p {
-    // font-family: 'Open Sans', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1rem;
+  // font-family: 'Open Sans', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
 }
 
 .lead {
-    // font-family: 'Fira sans', serif;
-    border-left: 6px solid $teal;
-    padding-left: 3px;
+  // font-family: 'Fira sans', serif;
+  border-left: 6px solid $teal;
+  padding-left: 3px;
 
-    p {
-        font-family: 'Libre Baskerville', serif;
-        font-weight: 500;
-    }
+  p {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 500;
+  }
 }
 
 .text-justify {
-    text-align: justify;
+  text-align: justify;
 }
