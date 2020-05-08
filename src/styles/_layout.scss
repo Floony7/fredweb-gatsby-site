@@ -1,59 +1,66 @@
 .container {
-    max-width: 960px;
-    padding: 1rem 1rem 3rem 1rem;
-    margin: -40px auto -60px auto;
-    
-    &--grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(360px, 2fr));
-    }
+  max-width: 960px;
+  padding: 1rem 1rem 3rem 1rem;
+  margin: -40px auto -60px auto;
 
-    &--grid-2 {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 1em;
-    }
+  &--grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 2fr));
+  }
+
+  &--grid-2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em;
+  }
+}
+
+@include bp(small) {
+  .container--grid {
+    grid-template-columns: 1fr;
+    width: 90vw;
+  }
 }
 
 // Two column + sidebar
 @include bp(medium) {
-    .content {
-        grid-column: 1 / span 3;
-      }
-      
-      .sidebar {
-        grid-column: 4 / span 2;
-      }
-}
-  
-  @include bp(small) {
-    .content,
-    .sidebar {
-      grid-column: 1 / span 5;
-    }
+  .content {
+    grid-column: 1 / span 3;
   }
 
-  // Two equal columns
+  .sidebar {
+    grid-column: 4 / span 2;
+  }
+}
+
+@include bp(small) {
+  .content,
+  .sidebar {
+    grid-column: 1 / span 5;
+  }
+}
+
+// Two equal columns
 .flex-col {
-    padding: 0 5px;
-    margin: 0 5px;
-    
-    p {
-        text-align: justify;
-    }
+  padding: 0 5px;
+  margin: 0 5px;
+
+  p {
+    text-align: justify;
+  }
 }
 
 .outer {
-    width: 100vw;
-    max-width: 100%;
-    position: relative;
+  width: 100vw;
+  max-width: 100%;
+  position: relative;
 
-    &--hero {
-        min-height: 40vh;
-        background-color: #fff;
-    }
+  &--hero {
+    min-height: 40vh;
+    background-color: #fff;
+  }
 
-    /* &--skills {
+  /* &--skills {
         background-color: plum;
     } */
 }
