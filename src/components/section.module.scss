@@ -1,12 +1,15 @@
-.container {
-  max-width: 960px;
-  padding: 1rem;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
+@import "../styles/_config";
 
-/* .outer::before {
+@include bp(medium) {
+  .container {
+    max-width: 960px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .outer::before {
   content: "";
   display: block;
   width: 100%;
@@ -18,37 +21,38 @@
   z-index: -100;
 } */
 
-.outer::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(51, 208, 255, 1) 0%,
-    rgba(234, 238, 68, 1) 100%
-  );
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 1;
-  mix-blend-mode: darken;
-}
+  .outer::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(51, 208, 255, 1) 0%,
+      rgba(234, 238, 68, 1) 100%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    mix-blend-mode: darken;
+  }
 
-.outer {
-  width: 100vw;
-  max-width: 100%;
-  position: relative;
-  // background-color: #080067;
-  background: url("../images/clouds.jpg");
-  background-size: cover;
-  mix-blend-mode: multiply;
-  overflow: hidden;
-  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.16);
-  min-height: 40vh;
-
-  * {
-    z-index: 10;
+  .outer {
+    width: 100vw;
+    max-width: 100%;
     position: relative;
+    // background-color: #080067;
+    background: url("../images/clouds.jpg");
+    background-size: cover;
+    mix-blend-mode: multiply;
+    overflow: hidden;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.16);
+    min-height: 40vh;
+
+    * {
+      z-index: 10;
+      position: relative;
+    }
   }
 }

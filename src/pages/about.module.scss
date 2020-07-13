@@ -1,4 +1,9 @@
-
 .hexagoned {
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.displayGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3px;
 }
