@@ -8,7 +8,6 @@ import "typeface-source-sans-pro"
 import "typeface-libre-baskerville"
 import "typeface-fira-sans"
 import "../styles/index.scss"
-import IndexStyles from "./index.module.scss"
 
 const IndexPage = () => (
   <Layout>
@@ -17,26 +16,49 @@ const IndexPage = () => (
     <div className="wrapper">
       {/* <section className={IndexStyles.sectionHero}> */}
       <section className="outer outer--hero">
+        <div className="container">
+          <h1>Web Development projects in 2020</h1>
+        </div>
         <div className="container container--grid">
           <div className="flex-col">
-          <h1>Web Development in 2020</h1>
-            <div className="lead">
-            <p>"But that's not how we did it back in my day."<br />Web development in 2020 looks radically different than it did just a few years ago, and that's a good thing.</p></div>
-            <p>In 2000 when I first learned HTML, things were fairly messy. At that time, page elements, presentation and interaction were thrown into the same HTML document. If you needed to make a tweak here and there you had to surgically find what you wanted to change by sifting through a complex page.</p>
-            <p>As the decade progressed things improved quite a lot. Presentation could be abstracted into CSS files while JavaScript files took care of the interaction layer.</p>
-            <p>Twenty years on we are fortunate to have web standards that make site development easy and faster than ever before.</p>
+            <h2>This website</h2>
+
+            <p>
+              This site is a refresh from my previous WordPress portfolio site.
+              It is my first site produced with the static site generator
+              Gatsby.
+            </p>
           </div>
           <div className="flex-col">
-            <h2>Beyond Wordpress</h2>
-            <p>For most of my web development career I have leaned heavily on <strong>WordPress</strong> as a platform to build client sites. This worked well for me and my clients &mdash; they got a fully dynamic website and I got to write only the template code I needed to. Plugins served up rest of the functionality.</p>
-            <h2>Serverless and static</h2>
-            <p>Today, however, technology and approaches to site development have changed. The tools of a web developer have come a long way. We now have Nodejs as a runtime server to work with along with a sophisticated pakage manager that provides developers with access to virtually everything we need to build modern applications and sites.</p>
-            </div>
+            <h2>React Periodic Table lookup</h2>
+
+            <p>
+              <a
+                href="https://objective-franklin-4f675c.netlify.app/"
+                target="_blank"
+              >
+                This simple app
+              </a>{" "}
+              that queries a periodic table api and filters based on element
+              groupings. My objective with this app was to learn the React
+              Context API so I could lift state to the app level.
+            </p>
+            <h2>Country reference app (in development)</h2>
+
+            <p>
+              <a
+                href="https://vibrant-almeida-61fe32.netlify.app/"
+                target="_blank"
+              >
+                The Country Reference app
+              </a>{" "}
+              is another React application wthat uses the Context API to handle
+              data and state. This app uses React Router to serve up pages for
+              each individual country/territory.
+            </p>
           </div>
+        </div>
       </section>
-      {/* <Section classes="outer outer--skills">
-        <p>My skills are many and varied. Just ask me via the contact form on this page.</p>
-      </Section> */}
     </div>
   </Layout>
 )
