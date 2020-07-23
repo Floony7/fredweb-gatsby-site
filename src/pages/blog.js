@@ -33,10 +33,7 @@ const BlogPage = () => {
         <div className="container container--grid-2">
           <div className="content">
             <h1>Hi from the Blog</h1>
-            <p>
-              Welcome to the blog. Here are just some of the amazing stories I
-              have written.
-            </p>
+            <p>An assortment of my musings on all things web.</p>
             <ol className={BlogStyles.posts}>
               {data.allMarkdownRemark.edges.map(edge => {
                 return (
