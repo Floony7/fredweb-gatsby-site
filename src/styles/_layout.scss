@@ -10,7 +10,7 @@
 
   &--grid-2 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 2fr 200px;
     gap: 1em;
   }
 }

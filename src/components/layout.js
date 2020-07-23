@@ -21,25 +21,30 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          description
           author
         }
       }
     }
   `)
 
-  return (      
+  return (
     <>
-    <div className={sectionStyles.outer}>
-      <div className={sectionStyles.container}>
-          <Header siteTitle={data.site.siteMetadata.title} />
+      <div className={sectionStyles.outer}>
+        <div className={sectionStyles.container}>
+          <Header
+            siteTitle={data.site.siteMetadata.title}
+            description={data.site.siteMetadata.description}
+          />
+        </div>
       </div>
-    </div>
-    <div className={sectionStyles.container}>
-          <main>{children}</main>
-    </div>
-        <Footer author={data.site.siteMetadata.author} 
+      <div className={sectionStyles.container}>
+        <main>{children}</main>
+      </div>
+      <Footer
+        author={data.site.siteMetadata.author}
         data={data.site.siteMetadata}
-        />
+      />
     </>
   )
 }

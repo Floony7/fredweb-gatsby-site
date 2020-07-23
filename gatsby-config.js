@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Fredweb Design`,
-    description: `The home of Kiwi web developer Fred Lunjevich.`,
+    title: `Fred Lunjevich`,
+    description: `Frontend Developer, Auckland`,
     author: `Fred Lunjevich`,
   },
   plugins: [
@@ -32,12 +32,12 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-            maxWidth: 750,
-            linkImagesToOriginal: false
-          }
-          }
-        ]
-      }
+              maxWidth: 750,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
