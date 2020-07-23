@@ -56,12 +56,12 @@ const BlogPage = () => {
             <Link to="/">Go back to the homepage</Link>
           </div>{" "}
           {/* End content div */}
-          <div className="sidebar">
+          {/* <div className="sidebar">
             <h2>Featured posts</h2>
             <p>
               <em>Feature in development.</em>
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
     </Layout>
